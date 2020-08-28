@@ -1,0 +1,133 @@
+#home {
+  background-color: black;
+  color: turquoise;
+}
+
+h1 {
+  color: turquoise;
+  font: normal 30px "Courier New", Courier, monospace;
+  font-weight: 550;
+  text-align: center;
+}
+h2 {
+  font: normal 25px "Courier New", Courier, monospace;
+  font-weight: 400;
+  position: relative;
+  left: 200px;
+  top: 40px;
+}
+
+h3 {
+  color: rgb(4, 117, 117);
+  font: normal 20px "Courier New", Courier, monospace;
+}
+h4 {
+  font: normal 25px "Courier New", Courier, monospace;
+  position: relative;
+  left: 900px;
+  bottom: 200px;
+}
+.container {
+  width: 20%;
+}
+.box {
+  border: 2px black solid;
+
+  border-top-style: dotted;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  border-bottom-style: dotted;
+  border-top-style: dotted;
+  padding: 20px;
+  background: linear-gradient(45deg, #fdc89a, #f3b0f3);
+  color: teal;
+  position: relative;
+  left: 150px;
+  top: 65px;
+}
+
+.box h1 {
+  font-family: monospace;
+  font-size: larger;
+  /* color: #3;  */
+  text-decoration: underline;
+}
+img {
+  position: relative;
+  left: 900px;
+  bottom: 200px;
+}
+a:link {
+  font: normal 25px "Courier New", Courier, monospace;
+  position: relative;
+  left: 550px;
+  bottom: 150px;
+  color: rgb(247, 193, 146);
+}
+a:visited {
+  color: rgb(247, 193, 146);
+}
+
+@keyframes lsd {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+    color: var(--first);
+  }
+  50% {
+    transform: rotate(360deg) scale(100, 100);
+    color: var(--second);
+  }
+  100% {
+    transform: rotate(720deg) scale(1, 1);
+    color: var(--first);
+  }
+}
+
+.lsd {
+  --first: darkcyan;
+  --second: black;
+  animation: lsd 4s 3s linear infinite normal;
+}
+
+@keyframes epilepsy {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.epilepsy {
+  animation: epilepsy 5s 3s linear infinite reverse;
+}
